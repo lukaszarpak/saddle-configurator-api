@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/saddle-types",
+      "handler": "saddle-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/saddle-types/count",
+      "handler": "saddle-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/saddle-types/:id",
+      "handler": "saddle-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/saddle-types",
+      "handler": "saddle-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/saddle-types/:id",
+      "handler": "saddle-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/saddle-types/:id",
+      "handler": "saddle-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

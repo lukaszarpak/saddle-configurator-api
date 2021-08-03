@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "saddle_types",
+  "info": {
+    "name": "saddle-type",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "background_img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "saddle_elements": {
+      "via": "saddle_type",
+      "collection": "saddle-element"
+    }
+  }
+}

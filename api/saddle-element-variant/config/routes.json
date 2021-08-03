@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/saddle-element-variants",
+      "handler": "saddle-element-variant.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/saddle-element-variants/count",
+      "handler": "saddle-element-variant.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/saddle-element-variants/:id",
+      "handler": "saddle-element-variant.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/saddle-element-variants",
+      "handler": "saddle-element-variant.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/saddle-element-variants/:id",
+      "handler": "saddle-element-variant.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/saddle-element-variants/:id",
+      "handler": "saddle-element-variant.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "saddle_elements",
+  "info": {
+    "name": "saddle-element",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "saddle_type": {
+      "via": "saddle_elements",
+      "model": "saddle-type"
+    },
+    "saddle_element_variants": {
+      "via": "saddle_element",
+      "collection": "saddle-element-variant"
+    },
+    "z_index": {
+      "required": false,
+      "default": 0,
+      "type": "integer"
+    },
+    "priority": {
+      "type": "integer",
+      "default": 0,
+      "required": false
+    }
+  }
+}
