@@ -24,10 +24,12 @@ module.exports = {
 
     return entities.map(entity => {
         entity = {
+            id: entity.id,
             z_index: entity.z_index,
             priority: entity.priority,
             title: entity.title,
             saddle_element_variants: entity.saddle_element_variants.map(variant => ({
+                id: variant.id,
                 title: variant.title,
                 thumbnail_hex_color: variant.thumbnail_hex_color,
                 title: variant.title,

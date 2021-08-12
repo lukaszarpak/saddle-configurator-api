@@ -24,11 +24,13 @@ module.exports = {
 
     return entities.map(entity => {
         entity = {
+            id: entity.id,
             title: entity.title,
             background_img: {
                 url: entity.background_img.url
             },
             saddle_elements: entity.saddle_elements.map(element => ({
+                id: element.id,
                 z_index: element.z_index,
                 priority: element.priority,
                 title: element.title,
